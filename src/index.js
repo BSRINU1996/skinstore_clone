@@ -12,13 +12,13 @@ root.render(
 
   <ChakraProvider>
     <AuthContextProvider>
-    <CartContextProvider>
-<BrowserRouter>
-    <App />
-    </BrowserRouter>
-    </CartContextProvider>
+      <CartContextProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </CartContextProvider>
     </AuthContextProvider>
-    </ChakraProvider>
+  </ChakraProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

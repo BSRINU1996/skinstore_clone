@@ -1,6 +1,9 @@
+// custom hook to find the dimensions of the window.
+
 import { useState, useEffect } from 'react';
 
 export const getWindowDimensions=()=> {
+  
     const { innerWidth: width, innerHeight: height } = window;
     return {
       width,
@@ -9,7 +12,8 @@ export const getWindowDimensions=()=> {
   }
   
   export const  useWindowDimensions=()=> {
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+    let obj = getWindowDimensions()
+    const [windowDimensions, setWindowDimensions] = useState(obj);
   
     useEffect(() => {
       function handleResize() {

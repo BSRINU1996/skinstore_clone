@@ -22,9 +22,10 @@ export const SignUp = () => {
     const { state, dispatch } = useContext(CartContext)
     const [load, setLoad] = useState(false)
     const [data, setData] = useState()
+
     useEffect(() => {
         setData([...state.user])
-        console.log(state.user, "state.user")
+        // console.log(state.user, "state.user")
     }, [load])
 
 
@@ -33,8 +34,12 @@ export const SignUp = () => {
 
         setForm({ ...form, [name]: value })
     }
-    console.log(data)
+
+    // console.log(data)
+
     const submit1 = (e) => {
+        console.log(state)
+        console.log(form)
         e.preventDefault()
         if (state.user) {
             let x = state.user?.filter((e) => {
@@ -44,16 +49,19 @@ export const SignUp = () => {
                 alert("Please enter another email")
             } else {
                 alert("Sign Up Successfully")
-                console.log("age bdo")
+                // console.log("age bdo")
                 dispatch(ADD_USER(form))
-                console.log()
+                // console.log()
                 setLoad(!load)
             }
         }
 
 
     }
-    console.log(form)
+    console.log(state.user)
+
+    // console.log(form)
+
     return <>
         <Box w="100%" bg="gray.300" p="10">
             <form onSubmit={submit1}>

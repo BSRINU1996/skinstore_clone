@@ -16,7 +16,7 @@ return <div>
           <li>
             
             <Link to="/makeup" class="anchortag"> MAKEUP</Link>
-            <div class="homediv">
+            {/* <div class="homediv">
               <div class="cnt">
                   <h6>FACE</h6>
                 <p>Foundation</p>
@@ -58,11 +58,11 @@ return <div>
                <p>Lip Balm & Treatment</p> 
                <p>Lip Brushes</p>
               </div>
-            </div>
+            </div> */}
           </li>
           <li>
             <Link to="/skincare" class="anchortag"> SKINCARE</Link>
-            <div class="homediv">
+            {/* <div class="homediv">
               <div class="cnt">
                   <h6>MOISTURIZERS</h6>
                 <p>Moisturizers</p>
@@ -94,12 +94,12 @@ return <div>
                <p>Ey ni Masks </p>
                <p></p> 
               </div>
-            </div>
+            </div> */}
           </li>
           <li>
            
             <Link to="/fragrance" class="anchortag">FRAGRANCE</Link>
-            <div class="homediv">
+            {/* <div class="homediv">
               <div class="cnt">
                   <h6>MENS</h6>
                 <p>BODY SPRAY & DEODRANT</p>
@@ -110,11 +110,11 @@ return <div>
                 <p>Mists and Deodorants</p>
                 <p>PerFume</p>   
               </div>
-            </div>
+            </div> */}
           </li>
           <li>
             <Link to="/haircare" class="anchortag">HAIRCARE</Link>
-            <div class="homediv">
+            {/* <div class="homediv">
               <div class="cnt">
                   <h6>SHAMPOO & CONDITIONER</h6>
                 <p>Shampoo</p>
@@ -127,12 +127,12 @@ return <div>
                 <p>Hair Masks</p>   
                 <p>Hair Clips</p>     
               </div>
-            </div>
+            </div> */}
           </li>
           <li>
             
             <Link to="toolsBrushes" class="anchortag">TOOLS & BRUSHES</Link>
-            <div class="homediv">
+            {/* <div class="homediv">
               <div class="cnt">
                   <h6>BRUSHES</h6>
                 <p>Face Brush</p>
@@ -157,11 +157,11 @@ return <div>
                 
                      
               </div>
-            </div>
+            </div> */}
           </li>
           <li>
             <Link to="/brands" class="anchortag">BRAND</Link>
-              <div class="homediv">
+              {/* <div class="homediv">
                   <div class="cnt">
                       <h6>MENS BRAND</h6>
                     <p>BODY SPRAY & DEODRANT</p>
@@ -173,7 +173,7 @@ return <div>
                     <p>PerFume</p>   
                   </div>
       
-                </div>
+                </div> */}
           </li>
         </ul>
         

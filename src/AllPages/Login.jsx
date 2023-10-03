@@ -9,7 +9,6 @@ import { AuthContext } from "../PrivateRoute/AuthContext"
 let obj = {
   email: "",
   password: ""
-
 }
 // export function ToastExample() {
 //   const toast = useToast()
@@ -29,11 +28,6 @@ let obj = {
 //     </Button>
 //   )
 // }
-
-
-
-
-
 
 export const Login = () => {
   const [form, setForm] = useState(obj)
@@ -61,13 +55,14 @@ export const Login = () => {
   const submit1 = (e) => {
     e.preventDefault()
     let flag = false
+    console.log(form);
+    console.log(data);
     data.forEach((e) => {
       if (e.email == form.email && e.password == form.password) {
         flag = true
 
       } else {
         flag = false
-
       }
 
     })
@@ -81,7 +76,7 @@ export const Login = () => {
     }
   }
 
-  
+
   return <>
     <Box w="100%" p="10" bg="gray.300">
       <Container h="60vh" mb="20px" mt="50px" textAlign={"center"} bg="white" p="10" boxShadow='md' borderRadius="20" >
